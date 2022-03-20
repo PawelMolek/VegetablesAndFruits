@@ -1,10 +1,10 @@
 <h1>test</h1>
-<%= link_to "New Participant", new_participant_path %>
 <br/>
-<br/>
-<ul>
-<% @participants.each do |participant| %>
-    <li><%= participant.name %>
-    <%= participant.active %></li>
-<% end %>
-</ul>
+<div class="row row-cols-4">
+  <% @participants.each do |participant| %>
+    <div class="col">
+      <%= participant.name %>
+    </div>
+    <% end %>
+</div>
+<%= render "check", participant: @participant %>

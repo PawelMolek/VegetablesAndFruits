@@ -1,0 +1,10 @@
+<%= form_for(@participant) do |f| %>
+  <%= form.fields_for :active do |active| %>
+    <p>
+      <%= form.check_box :active %>
+      <%= form.label :active, "Active" %>
+    </p>
+  <% end %>
+
+  <%= f.submit %>
+<% end %>
