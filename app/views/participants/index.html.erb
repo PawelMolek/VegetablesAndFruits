@@ -1,0 +1,10 @@
+<h1>test</h1>
+<%= link_to "New Participant", new_participant_path %>
+<br/>
+<br/>
+<ul>
+<% @participants.each do |participant| %>
+    <li><%= participant.name %>
+    <%= participant.active %></li>
+<% end %>
+</ul>
