@@ -1,4 +1,4 @@
-<h1>test</h1>
+<h1>Wielka rozgrywka warzywno owocowa !</h1>
 <br/>
 <div class="row row-cols-4">
 
@@ -7,15 +7,17 @@
   <thead>
   <tr>
     <% @participants.each do |participant| %>
-      <th scope="col"><%= participant.name %></th>
+      <th scope="col">
+        <%= link_to edit_participant_path(participant), class: "text-decoration-none text-success" do %>
+          <%= participant.name %>
+          </th>
+        <% end %>
     <% end %>
   </tr>
   </thead>
   <tbody>
   <tr>
-    <% @participants.each do |participant| %>
-      <td><%= participant.active ? "Aktywny" : "Niekatywny" %></td>
-    <% end %>
+    <!--      <td></td>-->
   </tr>
 
   </tr>
