@@ -1,10 +1,23 @@
 <h1>test</h1>
 <br/>
 <div class="row row-cols-4">
-  <% @participants.each do |participant| %>
-    <div class="col">
-      <%= participant.name %>
-    </div>
-    <% end %>
+
 </div>
-<%= render "check", participant: @participant %>
+<table class="table">
+  <thead>
+  <tr>
+    <% @participants.each do |participant| %>
+      <th scope="col"><%= participant.name %></th>
+    <% end %>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <% @participants.each do |participant| %>
+      <td><%= participant.active ? "Aktywny" : "Niekatywny" %></td>
+    <% end %>
+  </tr>
+
+  </tr>
+  </tbody>
+</table>
