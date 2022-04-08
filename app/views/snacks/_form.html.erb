@@ -1,0 +1,26 @@
+<%= form_with model: @snack do |form| %>
+  <div>
+    <% @snack.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.check_box :active %>
+    <%= form.label :active, "Active" %>
+  </div>
+
+  <div>
+    <%= form.text_field :title %>
+    <%= form.label :title, "Name" %>
+  </div>
+
+  <div>
+    <%= form.text_field :points %>
+    <%= form.label :points, "Points" %>
+  </div>
+
+    <div>
+    <%= form.submit %>
+  </div>
+<% end %>

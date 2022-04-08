@@ -47,6 +47,6 @@ class ParticipantsController < ApplicationController
 
   private
   def recipe_params
-    params.require(:participant).permit(:name, :active)
+    params.require(:participant).permit(:name, :active,:points)
   end
 end

@@ -6,6 +6,7 @@
 <table class="table">
   <thead>
   <tr>
+    <th scope="col"></th>
     <% @participants.each do |participant| %>
       <th scope="col">
         <%= link_to edit_participant_path(participant), class: "text-decoration-none text-success" do %>
@@ -17,9 +18,13 @@
   </thead>
   <tbody>
   <tr>
-    <!--      <td></td>-->
-  </tr>
+    <td>Points:</td>
+    <% @participants.each do |participant| %>
+      <td><%= participant.points %></td>
+    <% end %>
 
   </tr>
   </tbody>
 </table>
+
+<%= link_to "Add Snacks", new_snack_path %>
