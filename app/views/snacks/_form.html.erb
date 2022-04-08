@@ -1,9 +1,9 @@
-<%= form_with model: @snack do |form| %>
-  <div>
-    <% @snack.errors.full_messages_for(:name).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </div>
+<%= form_with(model: @snack) do |form| %>
+  <!--  <div>-->
+  <%# @snack.errors.full_messages_for(:name).each do |message| %>
+  <!--      <div><%#= message %></div>-->
+  <%# end %>
+  <!--  </div>-->
 
   <div>
     <%= form.check_box :active %>
@@ -20,7 +20,7 @@
     <%= form.label :points, "Points" %>
   </div>
 
-    <div>
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

@@ -3,7 +3,6 @@ class ParticipantsController < ApplicationController
 
   def index
     @participants = Participant.all
-
   end
 
   def show
@@ -14,7 +13,7 @@ class ParticipantsController < ApplicationController
   end
 
   def create
-    @participant = Participant.new(recipe_params)
+    @participant = Participant.new(participant_params)
 
     if @participant.save
       redirect_to root_path
@@ -30,7 +29,7 @@ class ParticipantsController < ApplicationController
   def update
     @participant = Participant.find(params[:id])
 
-    if @participant.update(recipe_params)
+    if @participant.update(participant_params)
       redirect_to root_path
     else
       render :edit, status: :unprocessable_entity
@@ -46,7 +45,8 @@ class ParticipantsController < ApplicationController
 
 
   private
-  def recipe_params
-    params.require(:participant).permit(:name, :active,:points)
+
+  def participant_params
+    params.require(:participant).permit(:name, :active, :points)
   end
 end
