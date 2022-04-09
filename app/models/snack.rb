@@ -1,3 +1,3 @@
 class Snack < ApplicationRecord
-  # belongs_to :participant
+  validates :title, presence: true
 end

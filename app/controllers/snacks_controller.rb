@@ -1,16 +1,19 @@
 class SnacksController < ApplicationController
-
+  before_action :set_snack, only: %i[show edit update destroy]
 
   def index
     @snacks = Snack.all
   end
 
-  def edit
-    @snack = Snack.find(params[:id])
+  def show
+
   end
 
   def new
     @snack = Snack.new
+  end
+
+  def edit
   end
 
   def create
@@ -24,8 +27,6 @@ class SnacksController < ApplicationController
   end
 
   def update
-    @snack = Snack.find(params[:id])
-
     if @snack.update(snack_params)
       redirect_to root_path, notice: "Succesful updatings"
     else
@@ -34,9 +35,19 @@ class SnacksController < ApplicationController
 
   end
 
+  def destroy
+    @snack.destroy
+
+    redirect_to root_path, status: :see_other
+  end
+
   private
 
   def snack_params
-    params.require(:snack).permit(:title, :active, :points)
+    params.require(:snack).permit(:title, :points, :active)
+  end
+
+  def set_snack
+    @snack = Snack.find(params[:id])
   end
 end

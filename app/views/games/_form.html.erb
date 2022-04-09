@@ -1,0 +1,9 @@
+<%= form_with(model: game) do |form| %>
+  <%= form.label :game_date%>
+  <%= form.date_select :game_date%>
+  <%= form.label :snack_id%>
+  <%= form.select :snack_id, @snacks, {} %>
+  <%= form.label :participant_id%>
+  <%= form.select :participant_id, @participants, {} %>
+  <%= form.submit %>
+<% end %>
