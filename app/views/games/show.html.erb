@@ -1,1 +1,14 @@
-<%= render @games %>
+<%#= render @games %>
+<table class="table">
+  <tbody>
+  <% @games.each do |game| %>
+    <tr>
+      <td><%= game.game_date %></td>
+      <td><%= game.snack_id %></td>
+      <td><%= game.participant_id %></td>
+      <td><%= @participants.find_by(id: game.participant_id).name %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>

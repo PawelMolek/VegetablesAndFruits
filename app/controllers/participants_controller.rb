@@ -42,7 +42,7 @@ class ParticipantsController < ApplicationController
   private
 
   def participant_params
-    params.require(:participant).permit(:name, :active, :points)
+    params.require(:participant).permit(:name, :active, :points, :snacks_id)
   end
 
   def set_participant

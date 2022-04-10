@@ -1,5 +1,7 @@
 class GamesController < ApplicationController
   before_action :set_game, only: %i[edit update destroy]
+  before_action :set_participant, only: %i[edit update destroy]
+  before_action :set_snack, only: %i[edit update destroy]
 
   def index
     @games = Game.all
@@ -14,7 +16,7 @@ class GamesController < ApplicationController
 
   def show
     @games = Game.all
-
+    @participants = Participant.all
   end
 
   def edit
@@ -70,5 +72,13 @@ class GamesController < ApplicationController
 
   def options_for_participant_select
     Participant.order(:name).all.map { |participant|[participant.name, participant.id]}
+  end
+
+  def set_participant
+    @participant = Participant.find(params[:participant_id])
+  end
+
+  def set_snack
+    @snack = Snack.find(params[:snack_id])
   end
 end

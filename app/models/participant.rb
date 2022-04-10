@@ -1,3 +1,3 @@
 class Participant < ApplicationRecord
-  validates :name, presence: true
+  has_many :snacks
 end
