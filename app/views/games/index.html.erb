@@ -1,3 +1,21 @@
-<%# @games.each do |game|  %>
-  <%#= game.date %>
-<%# end %>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">date</th>
+    <th scope="col">participant</th>
+    <th scope="col">snack</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @games.each do |game| %>
+    <tr>
+      <th><%= game.game_date %></th>
+<!--      <th><%#= game.participant_id %></th>-->
+<!--      <th><%#= game.snack_id %></th>-->
+    </tr>
+  <% end %>
+  <%# @participants.each do |participant| %>
+    <%#= participant.name %>
+  <%# end %>
+  </tbody>
+</table>

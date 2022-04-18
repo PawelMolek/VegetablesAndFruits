@@ -1,7 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: %i[edit update destroy]
-  before_action :set_participant, only: %i[edit update destroy]
-  before_action :set_snack, only: %i[edit update destroy]
+  before_action :set_game, only: %i[show edit update destroy]
 
   def index
     @games = Game.all
@@ -11,18 +9,11 @@ class GamesController < ApplicationController
     @game = Game.new
     @snacks = options_for_snack_select
     @participants = options_for_participant_select
-
-  end
-
-  def show
-    @games = Game.all
-    @participants = Participant.all
   end
 
   def edit
     @snacks = options_for_snack_select
     @participants = options_for_participant_select
-
   end
 
   def create
@@ -58,7 +49,8 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:game_date, :snack_id, :participant_id)
+    params.require(:game).permit(:game_date, :points, :participant_one_id, :participant_two_id, :participant_three_id,
+                                 :participant_four_id, :snack_one_id, :snack_two_id, :snack_three_id)
   end
 
   def set_game
@@ -66,19 +58,13 @@ class GamesController < ApplicationController
   end
 
   def options_for_snack_select
+    # Snack.where(id: Snack.pluck(:id).sample(3))
     Snack.order(:title).all.map { |snack| [snack.title, snack.id] }
   end
 
-
   def options_for_participant_select
+    # Participant.all
     Participant.order(:name).all.map { |participant|[participant.name, participant.id]}
   end
 
-  def set_participant
-    @participant = Participant.find(params[:participant_id])
-  end
-
-  def set_snack
-    @snack = Snack.find(params[:snack_id])
-  end
 end

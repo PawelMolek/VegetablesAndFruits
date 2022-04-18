@@ -9,7 +9,7 @@
     <th scope="col"></th>
     <% @participants.each do |participant| %>
       <th scope="col">
-        <%= link_to edit_participant_path(participant), class: "text-decoration-none text-success" do %>
+        <%= link_to participant_path(participant), class: "text-decoration-none text-success" do %>
           <%= participant.name %>
           </th>
         <% end %>
@@ -29,7 +29,7 @@
 
 <%= link_to "Add Snacks", new_snack_path %><br/>
 <%= link_to "Add Participant", new_participant_path %><br/>
-<%= link_to "Add game", new_games_path %><br/>
+<%= link_to "Add game", new_game_path %><br/>
 <%= link_to "Snacks", snacks_path %>
 <%= link_to "Games", games_path %>
 

@@ -19,7 +19,7 @@ class ParticipantsController < ApplicationController
     @participant = Participant.new(participant_params)
 
     if @participant.save
-      redirect_to root_path, notice: "Something's went wrong"
+      redirect_to root_path, notice: "success"
     else
       render :new, status: :unprocessable_entity
     end
@@ -42,11 +42,14 @@ class ParticipantsController < ApplicationController
   private
 
   def participant_params
-    params.require(:participant).permit(:name, :active, :points, :snacks_id)
+    params.require(:participant).permit(:name, :active, :points)
   end
 
   def set_participant
     @participant = Participant.find(params[:id])
   end
 
+  # def set_game
+  #   @game = Game.find(params[:game_id])
+  # end
 end
