@@ -1,9 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  participant: one
-  snack: one
+  game_date: 2022-05-01
 
 two:
-  participant: two
-  snack: two
+  game_date: 2022-05-01

@@ -10,34 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_18_185342) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_01_085836) do
   create_table "games", force: :cascade do |t|
-    t.integer "participants_id", null: false
     t.date "game_date"
-    t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["participants_id"], name: "index_games_on_participants_id"
+    t.integer "snack_id", null: false
+    t.integer "participant_id", null: false
+    t.index ["participant_id"], name: "index_games_on_participant_id"
+    t.index ["snack_id"], name: "index_games_on_snack_id"
   end
 
   create_table "participants", force: :cascade do |t|
     t.string "name", null: false
+    t.integer "points", default: 0
+    t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "active", default: true
-    t.integer "points", default: 0
-    t.integer "snacks_id"
-    t.index ["snacks_id"], name: "index_participants_on_snacks_id"
   end
 
   create_table "snacks", force: :cascade do |t|
-    t.string "title", null: false
+    t.string "name", null: false
     t.integer "points", default: 0
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "games", "participants", column: "participants_id"
-  add_foreign_key "participants", "snacks", column: "snacks_id"
+  add_foreign_key "games", "participants"
+  add_foreign_key "games", "snacks"
 end

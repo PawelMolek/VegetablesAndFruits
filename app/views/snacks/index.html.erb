@@ -5,7 +5,7 @@
     <% @snacks.each do |snack| %>
       <th scope="col">
         <%= link_to edit_snack_path(snack), class: "text-decoration-none text-success" do %>
-          <%= snack.title %>
+          <%= snack.name %>
           </th>
         <% end %>
     <% end %>

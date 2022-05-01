@@ -49,7 +49,4 @@ class ParticipantsController < ApplicationController
     @participant = Participant.find(params[:id])
   end
 
-  # def set_game
-  #   @game = Game.find(params[:game_id])
-  # end
 end

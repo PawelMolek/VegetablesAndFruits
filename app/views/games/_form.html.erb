@@ -1,14 +1,6 @@
 <%= form_with(model: game) do |form| %>
   <%= form.label :game_date%>
   <%= form.date_select :game_date%>
-  <%= form.label :participant_one_id%>
-  <%= form.select :participant_one_id, @participants, {}, class: "form-select" %>
-  <%= form.label :participant_two_id%>
-  <%= form.select :participant_two_id, @participants, {}, class: "form-select" %>
-  <%= form.label :participant_three_id%>
-  <%= form.select :participant_three_id, @participants, {}, class: "form-select" %>
-  <%= form.label :participant_four_id%>
-  <%= form.select :participant_four_id, @participants, {}, class: "form-select" %>
 
   <%= form.submit %>
 <% end %>
