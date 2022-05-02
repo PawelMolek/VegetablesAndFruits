@@ -1,5 +1,4 @@
 class Game < ApplicationRecord
-  has_many :participants
-  has_many :snacks
-
+  has_many :game_participants
+  has_many :participants, through: :game_participants
 end

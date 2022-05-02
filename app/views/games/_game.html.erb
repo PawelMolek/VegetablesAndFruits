@@ -1,10 +1,6 @@
-<table class="table">
-  <tbody>
-  <tr>
-    <th scope="row">Date</th>
-    <td><%= game.game_date %></td>
-    <td><%= game.snack_id %></td>
-    <td><%= game.participant_id %></td>
-  </tr>
-  </tbody>
-</table>
+<div class=post-content>
+  <%= @game.game_date %>
+  <% @game.participants.each do |participant| %>
+    <%= participant.name %>
+  <% end %>
+</div>

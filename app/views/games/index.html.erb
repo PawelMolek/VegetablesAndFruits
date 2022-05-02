@@ -10,12 +10,11 @@
   <% @games.each do |game| %>
     <tr>
       <th><%= game.game_date %></th>
-<!--      <th><%#= game.participant_id %></th>-->
-<!--      <th><%#= game.snack_id %></th>-->
+      <% game.participants.each do |participant| %>
+        <th><%= participant.name %></th>
+      <% end %>
     </tr>
   <% end %>
-  <%# @participants.each do |participant| %>
-    <%#= participant.name %>
-  <%# end %>
   </tbody>
 </table>
+

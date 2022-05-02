@@ -43,7 +43,7 @@ class SnacksController < ApplicationController
   private
 
   def snack_params
-    params.require(:snack).permit(:name, :points, :active)
+    params.require(:snack).permit(:name, :points)
   end
 
   def set_snack
