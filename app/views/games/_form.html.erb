@@ -1,3 +1,10 @@
+<% if game.errors.any? %>
+  <div style="color: red">
+    <% game.errors.each do |error| %>
+      <%= error.full_message %>
+    <% end %>
+  </div>
+<% end %>
 <%= form_with(model: game) do |form| %>
   <%= form.label :game_date %>
   <%= form.date_select :game_date %>

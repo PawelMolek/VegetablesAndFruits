@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd4cced7-bc84-4d8d-9f4a-353480f7f1eb" name="Changes" comment="" />
+    <list default="true" id="bd4cced7-bc84-4d8d-9f4a-353480f7f1eb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/participants_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/participants_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/game.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/participant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/participant.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/snack.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/snack.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/participants/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/participants/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/snacks/_form.html.erb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +169,7 @@
       <workItem from="1651473301748" duration="3708000" />
       <workItem from="1651484253424" duration="544000" />
       <workItem from="1651484810439" duration="1188000" />
-      <workItem from="1651487402606" duration="6520000" />
+      <workItem from="1651487402606" duration="9201000" />
     </task>
     <task id="LOCAL-00001" summary="Associations reset">
       <created>1651406847917</created>

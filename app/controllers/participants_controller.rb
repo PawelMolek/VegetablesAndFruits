@@ -19,7 +19,7 @@ class ParticipantsController < ApplicationController
     @participant = Participant.new(participant_params)
 
     if @participant.save
-      redirect_to root_path, notice: "success"
+      redirect_to root_path, notice: "Participant was successfuly created"
     else
       render :new, status: :unprocessable_entity
     end
@@ -27,7 +27,7 @@ class ParticipantsController < ApplicationController
 
   def update
     if @participant.update(participant_params)
-      redirect_to root_path
+      redirect_to root_path, notice: "Participant was successfuly updated"
     else
       render :edit, status: :unprocessable_entity
     end
@@ -36,7 +36,7 @@ class ParticipantsController < ApplicationController
   def destroy
     @participant.destroy
 
-    redirect_to root_path, status: :see_other
+    redirect_to root_path, status: :see_other, notice: "Participant was successfuly deleted"
   end
 
   private
