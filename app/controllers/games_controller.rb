@@ -40,7 +40,7 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:game_date, participant_ids: [], participants_attributes: [:name])
+    params.require(:game).permit(:game_date, participant_ids: [], participants_attributes: [:name], snack_ids: [], snack_attributes: [:name])
   end
 
   def set_game

@@ -1,7 +1,7 @@
 class CreateGames < ActiveRecord::Migration[7.0]
   def change
     create_table :games do |t|
-      t.date :game_date
+      t.date :game_date, null: false
 
       t.timestamps
     end

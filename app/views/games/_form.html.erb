@@ -9,5 +9,6 @@
   <%= form.label :game_date %>
   <%= form.date_select :game_date %>
   <%= form.collection_check_boxes :participant_ids, Participant.all, :id, :name %>
+  <%= form.collection_check_boxes :snack_ids, Snack.all, :id, :name %>
   <%= form.submit %>
 <% end %>
