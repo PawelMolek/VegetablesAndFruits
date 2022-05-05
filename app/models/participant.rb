@@ -1,7 +1,10 @@
 class Participant < ApplicationRecord
-  validates :name, presence: true, length: { minimum: 3, maximum: 30}
+  validates :name, uniqueness: true, presence: true, length: { minimum: 3, maximum: 30}
   #include points validation and specs
 
-  has_many :game_details
-  has_many :games, through: :game_details
+  has_many :games
+  has_many :snacks, through: :games
 end
+
+
+

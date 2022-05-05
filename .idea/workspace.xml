@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd4cced7-bc84-4d8d-9f4a-353480f7f1eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/game_detail.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220504163907_create_game_details.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/game_detail_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VegetablesAndFruits.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VegetablesAndFruits.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/game.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/game_participant.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/game_detail.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/participant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/participant.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/snack.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/snack.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/games/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20220501081011_create_participants.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220501081011_create_participants.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20220501081029_create_snacks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220501081029_create_snacks.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20220501201654_create_games.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220501201654_create_games.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220502111209_create_game_participants.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220504163907_create_game_details.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

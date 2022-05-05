@@ -13,6 +13,9 @@
       <% game.participants.each do |participant| %>
         <th><%= participant.name %></th>
       <% end %>
+      <% game.snacks.each do |snack| %>
+        <th><%= snack.name %></th>
+      <% end %>
     </tr>
   <% end %>
   </tbody>
