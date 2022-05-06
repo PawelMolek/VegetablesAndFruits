@@ -10,11 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_01_201654) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_06_104858) do
   create_table "games", force: :cascade do |t|
     t.date "game_date", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "participant_games", force: :cascade do |t|
+    t.integer "game_id"
+    t.integer "participant_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_participant_games_on_game_id"
+    t.index ["participant_id"], name: "index_participant_games_on_participant_id"
   end
 
   create_table "participants", force: :cascade do |t|
@@ -24,6 +33,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_01_201654) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["game_id"], name: "index_participants_on_game_id"
+  end
+
+  create_table "snack_participants", force: :cascade do |t|
+    t.integer "snack_id"
+    t.integer "participant_id"
+    t.integer "game_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_snack_participants_on_game_id"
+    t.index ["participant_id"], name: "index_snack_participants_on_participant_id"
+    t.index ["snack_id"], name: "index_snack_participants_on_snack_id"
   end
 
   create_table "snacks", force: :cascade do |t|

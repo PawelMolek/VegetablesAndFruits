@@ -15,6 +15,11 @@ class GamesController < ApplicationController
 
   def create
     @game = Game.new(game_params)
+    @game.participants = Participant.all
+    # @game.participants << Participant.find_by(id: 1)
+    # @game.participants << Participant.find_by(id: 2)
+    # @game.add_snack(Snack.first, game.participants.first)
+    # @game.add_snack(Snack.second, game.participants.second)
     # binding.pry
     if @game.save
       redirect_to games_path, notice: "Game was successfuly created"
@@ -41,8 +46,10 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:game_date, participant_ids: [], participants_attributes: [:name], snack_attributes: [:name], snack_ids: [])
+    params.require(:game).permit(:game_date)
   end
+  # , participant_ids: [], participants_attributes: [:name], snack_attributes: [:name], snack_ids: []
+
   def set_game
     @game = Game.find(params[:id])
   end
