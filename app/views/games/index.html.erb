@@ -1,22 +1,14 @@
-<table class="table">
-  <thead>
-  <tr>
-    <th scope="col">date</th>
-    <th scope="col">participant</th>
-    <th scope="col">snack</th>
-  </tr>
-  </thead>
-  <tbody>
+<p style="color: green"><%= notice %></p>
+
+<h1>Games</h1>
+
+<div id="games">
   <% @games.each do |game| %>
-    <tr>
-      <th><%= game.game_date %></th>
-      <% game.participants.each do |participant| %>
-        <th><%= participant.name %></th>
-      <% end %>
-      <th><%=  %></th>
-
-    </tr>
+    <%= render game %>
+    <p>
+      <%= link_to "Show this game", game %>
+    </p>
   <% end %>
-  </tbody>
-</table>
+</div>
 
+<%= link_to "New game", new_game_path %>

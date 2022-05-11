@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  resources :participants
   resources :games
+  resources :snack_games
+  resources :player_games
   resources :snacks
+  resources :players
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "participants#index"
+  root "players#index"
 end

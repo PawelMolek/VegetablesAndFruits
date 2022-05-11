@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd4cced7-bc84-4d8d-9f4a-353480f7f1eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/participant_game.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/snack_participant.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/.fuse_hidden000298f800000030" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220506104756_create_snack_participants.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220506104858_create_participant_games.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/participant_game_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/snack_participant_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e2f0b917-3e54-44f3-a06f-d131332d6ff3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/T.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/T.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/game.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/participant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/participant.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/snack.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/snack.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/player.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/player.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/snack_game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/snack_game.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/games/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/games/_game.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/_game.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/games/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,27 +33,21 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28YTPKXLRGo0EzxTDipRxlG3RH3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="28wPuKv0hqpEHi1cO2HPH23RzI8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Rails.Development: VegetablesAndFruits">
-    <configuration name="Development: VegetablesAndFruits" type="RailsRunConfigurationType" factoryName="Rails">
-      <module name="VegetablesAndFruits" />
+  <component name="RunManager" selected="Rails.Development: T">
+    <configuration name="Development: T" type="RailsRunConfigurationType" factoryName="Rails">
+      <module name="T" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -83,8 +71,8 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Production: VegetablesAndFruits" type="RailsRunConfigurationType" factoryName="Rails">
-      <module name="VegetablesAndFruits" />
+    <configuration name="Production: T" type="RailsRunConfigurationType" factoryName="Rails">
+      <module name="T" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -108,8 +96,8 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="spec: VegetablesAndFruits" type="RakeRunConfigurationType" factoryName="Rake">
-      <module name="VegetablesAndFruits" />
+    <configuration name="spec: T" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="T" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -132,8 +120,8 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="test: VegetablesAndFruits" type="RakeRunConfigurationType" factoryName="Rake">
-      <module name="VegetablesAndFruits" />
+    <configuration name="test: T" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="T" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -164,47 +152,18 @@
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd4cced7-bc84-4d8d-9f4a-353480f7f1eb" name="Changes" comment="" />
-      <created>1651392495594</created>
+      <changelist id="e2f0b917-3e54-44f3-a06f-d131332d6ff3" name="Changes" comment="" />
+      <created>1652124900444</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1651392495594</updated>
-      <workItem from="1651392499282" duration="40000" />
-      <workItem from="1651392651212" duration="2059000" />
-      <workItem from="1651395457504" duration="8000" />
-      <workItem from="1651395487183" duration="11378000" />
-      <workItem from="1651471962971" duration="699000" />
-      <workItem from="1651473301748" duration="3708000" />
-      <workItem from="1651484253424" duration="544000" />
-      <workItem from="1651484810439" duration="1188000" />
-      <workItem from="1651487402606" duration="12960000" />
-      <workItem from="1651681602978" duration="2436000" />
-      <workItem from="1651828002285" duration="14931000" />
+      <updated>1652124900444</updated>
+      <workItem from="1652124902018" duration="11217000" />
+      <workItem from="1652218825991" duration="1213000" />
+      <workItem from="1652301212558" duration="3606000" />
     </task>
-    <task id="LOCAL-00001" summary="Associations reset">
-      <created>1651406847917</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1651406847917</updated>
-    </task>
-    <task id="LOCAL-00002" summary="associated correctly participants with games by has_many :through and basically configured">
-      <created>1651502428438</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1651502428439</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Associations reset" />
-    <MESSAGE value="associated correctly participants with games by has_many :through and basically configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="associated correctly participants with games by has_many :through and basically configured" />
   </component>
 </project>

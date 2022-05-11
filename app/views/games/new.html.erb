@@ -1,2 +1,9 @@
-New.
-<%= render 'form', game: @game %>
+<h1>New game</h1>
+
+<%= render "form", game: @game %>
+
+<br>
+
+<div>
+  <%= link_to "Back to games", games_path %>
+</div>

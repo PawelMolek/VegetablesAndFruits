@@ -1,3 +1,9 @@
-New.
-<%= render "form", snack: @snack%>
-<%= link_to "Back", root_path %>
+<h1>New snack</h1>
+
+<%= render "form", snack: @snack %>
+
+<br>
+
+<div>
+  <%= link_to "Back to snacks", snacks_path %>
+</div>

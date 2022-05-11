@@ -1,0 +1,2 @@
+module SnackGamesHelper
+end

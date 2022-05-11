@@ -1,23 +1,14 @@
-<table class="table">
-  <thead>
-  <tr>
-    <th scope="col"></th>
-    <% @snacks.each do |snack| %>
-      <th scope="col">
-        <%= link_to edit_snack_path(snack), class: "text-decoration-none text-success" do %>
-          <%= snack.name %>
-          </th>
-        <% end %>
-    <% end %>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>Points:</td>
-    <% @snacks.each do |snack| %>
-      <td><%= snack.points %></td>
-    <% end %>
+<p style="color: green"><%= notice %></p>
 
-  </tr>
-  </tbody>
-</table>
+<h1>Snacks</h1>
+
+<div id="snacks">
+  <% @snacks.each do |snack| %>
+    <%= render snack %>
+    <p>
+      <%= link_to "Show this snack", snack %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New snack", new_snack_path %>
