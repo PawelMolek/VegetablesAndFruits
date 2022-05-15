@@ -1,6 +1,9 @@
 class GamesController < ApplicationController
   before_action :set_game, only: %i[ show edit update destroy ]
 
+
+  # Find solution to assign players and snacks after create game not only from view but also from terminal
+
   # GET /games or /games.json
   def index
     @games = Game.all
@@ -65,6 +68,7 @@ class GamesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def game_params
-      params.require(:game).permit(:game_date, player_ids: [], player_attributes: [:name], snack_attributes: [:name], snack_ids: [])
+      params.require(:game).permit(:game_date, player_ids: [], player_attributes: [:name], snack_ids: [], snack_attributes: [:name])
     end
+
 end

@@ -15,7 +15,7 @@
     <%= form.label :game_date, style: "display: block" %>
     <%= form.date_select :game_date %>
     <%= form.collection_check_boxes :player_ids, Player.all, :id, :name,   include_hidden: false %>
-    <%= form.collection_check_boxes :snack_ids, Snack.all, :id, :name,   include_hidden: false %>
+    <%#= form.collection_check_boxes :snack_ids, Snack.all, :id, :name,   include_hidden: false %>
   </div>
 
   <div>
