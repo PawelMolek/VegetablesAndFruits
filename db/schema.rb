@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_15_213542) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_11_213227) do
   create_table "games", force: :cascade do |t|
-    t.date "game_date"
+    t.date "game_date", default: "2022-05-16", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,11 +27,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_15_213542) do
   end
 
   create_table "players", force: :cascade do |t|
-    t.string "name"
-    t.integer "points"
+    t.string "name", null: false
+    t.integer "points", default: 0
+    t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "active"
   end
 
   create_table "snack_games", force: :cascade do |t|
@@ -46,11 +46,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_15_213542) do
   end
 
   create_table "snacks", force: :cascade do |t|
-    t.string "name"
-    t.integer "points"
+    t.string "name", null: false
+    t.integer "points", default: 0
+    t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "active"
   end
 
   add_foreign_key "player_games", "games"

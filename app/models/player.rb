@@ -1,5 +1,7 @@
 class Player < ApplicationRecord
-  # after_initialize :assign_snacks
+  validates :name, length: {minimum: 3, maximum: 20}
+  validates :points, presence: true
+  validates :active, presence: true
 
   has_many :player_games
   has_many :games, through: :player_games
@@ -7,8 +9,4 @@ class Player < ApplicationRecord
   has_many :snack_games
   has_many :snacks, through: :snack_games
 
-  # def assign_snacks
-    # self games.last every time after create game it should randomly assign snacks to player but probably in game model
-    # self.games.last.snack_ids = [1,2]
-  # end
 end
