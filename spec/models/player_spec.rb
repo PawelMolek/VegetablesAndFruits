@@ -43,5 +43,12 @@ RSpec.describe Player, :type => :model do
       player = Player.new(name: "name").save
       expect(player).to eq(true)
     end
+
+    it "has not uniq name" do
+      player = Player.new(name: "name").save
+      player1 = Player.new(name: "name").save
+      expect(player1).to eq(false)
+    end
+
   end
 end

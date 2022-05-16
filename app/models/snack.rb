@@ -1,5 +1,5 @@
 class Snack < ApplicationRecord
-  validates :name, length: {minimum: 3, maximum: 20}
+  validates :name, length: {minimum: 3, maximum: 20}, uniqueness: true
   validates :points, presence: true
   validates :active, presence: true
 

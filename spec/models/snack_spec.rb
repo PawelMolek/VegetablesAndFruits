@@ -43,5 +43,12 @@ RSpec.describe Snack, :type => :model do
       snack = Snack.new(name: "name").save
       expect(snack).to eq(true)
     end
+
+    it "has not uniq name" do
+      snack = Snack.new(name: "name").save
+      snack1 = Snack.new(name: "name").save
+      expect(snack1).to eq(false)
+    end
+
   end
 end
