@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f0b917-3e54-44f3-a06f-d131332d6ff3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spec/models/snack_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/game_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/player_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/player_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/game.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/.fuse_hidden0001e2fa00000021" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,7 @@
       <workItem from="1652474232448" duration="177000" />
       <workItem from="1652559517821" duration="12189000" />
       <workItem from="1652716478993" duration="15000" />
-      <workItem from="1652716506025" duration="2078000" />
+      <workItem from="1652716506025" duration="3374000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,8 @@
 class Game < ApplicationRecord
 
   validates :game_date, comparison: { greater_than_or_equal_to: Date.today }
-  validates :player_ids, presence: true
 
-  after_create :assign_snacks_to_players
+  # after_create :assign_snacks_to_players
 
   has_many :player_games
   has_many :players, through: :player_games
