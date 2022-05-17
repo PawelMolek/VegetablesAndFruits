@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema[7.0].define(version: 2022_05_11_213227) do
   create_table "games", force: :cascade do |t|
-    t.date "game_date", default: "2022-05-16", null: false
+    t.date "game_date", default: "2022-05-17", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

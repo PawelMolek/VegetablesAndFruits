@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f0b917-3e54-44f3-a06f-d131332d6ff3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/db/.fuse_hidden0002a9a400000023" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/T.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/T.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/player.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/player.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/snack.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/snack.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220509195614_create_players.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220509195614_create_players.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220509195621_create_snacks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220509195621_create_snacks.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/game.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/.fuse_hidden0002a9a400000023" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/player_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/player_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/snack_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/snack_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +171,8 @@
       <workItem from="1652474232448" duration="177000" />
       <workItem from="1652559517821" duration="12189000" />
       <workItem from="1652716478993" duration="15000" />
-      <workItem from="1652716506025" duration="6458000" />
+      <workItem from="1652716506025" duration="6774000" />
+      <workItem from="1652785307665" duration="1903000" />
     </task>
     <servers />
   </component>
