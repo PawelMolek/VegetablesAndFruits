@@ -65,7 +65,7 @@ class SnacksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def snack_params
-      params.require(:snack).permit(:name, :points)
+      params.require(:snack).permit(:name, :points, :active)
       #maybe , player_ids: [] ?
     end
 end

@@ -16,7 +16,6 @@ class GamesController < ApplicationController
   # GET /games/new
   def new
     @game = Game.new
-
   end
 
   # GET /games/1/edit
@@ -26,6 +25,7 @@ class GamesController < ApplicationController
   # POST /games or /games.json
   def create
     @game = Game.new(game_params)
+
     respond_to do |format|
       if @game.save
         format.html { redirect_to game_url(@game), notice: "Game was successfully created." }

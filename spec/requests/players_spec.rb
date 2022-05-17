@@ -64,7 +64,7 @@ RSpec.describe "/players", type: :request do
         }.to change(Player, :count).by(1)
       end
 
-      it "redirects to the created player" do
+      it "redirects to the created players" do
         post players_url, params: { player: valid_attributes }
         expect(response).to redirect_to(player_url(Player.last))
       end
@@ -90,14 +90,14 @@ RSpec.describe "/players", type: :request do
         skip("Add a hash of attributes valid for your model")
       }
 
-      it "updates the requested player" do
+      it "updates the requested players" do
         player = Player.create! valid_attributes
         patch player_url(player), params: { player: new_attributes }
         player.reload
         skip("Add assertions for updated state")
       end
 
-      it "redirects to the player" do
+      it "redirects to the players" do
         player = Player.create! valid_attributes
         patch player_url(player), params: { player: new_attributes }
         player.reload
@@ -115,7 +115,7 @@ RSpec.describe "/players", type: :request do
   end
 
   describe "DELETE /destroy" do
-    it "destroys the requested player" do
+    it "destroys the requested players" do
       player = Player.create! valid_attributes
       expect {
         delete player_url(player)

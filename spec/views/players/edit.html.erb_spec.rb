@@ -8,14 +8,14 @@ RSpec.describe "players/edit", type: :view do
     ))
   end
 
-  it "renders the edit player form" do
+  it "renders the edit players form" do
     render
 
     assert_select "form[action=?][method=?]", player_path(@player), "post" do
 
-      assert_select "input[name=?]", "player[name]"
+      assert_select "input[name=?]", "players[name]"
 
-      assert_select "input[name=?]", "player[points]"
+      assert_select "input[name=?]", "players[points]"
     end
   end
 end

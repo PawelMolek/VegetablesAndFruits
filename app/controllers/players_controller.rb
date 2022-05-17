@@ -65,7 +65,7 @@ class PlayersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def player_params
-      params.require(:player).permit(:name, :points, snack_ids: [])
+      params.require(:player).permit(:name, :points, :active)
       #in my opinion I should delete snack_ids from here
     end
 end
