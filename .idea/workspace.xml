@@ -2,13 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f0b917-3e54-44f3-a06f-d131332d6ff3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/T.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/T.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/game.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/.fuse_hidden0002a9a400000023" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/_game.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/_game.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/_player_game.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/_player_game.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/player_games/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/_player.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/_player.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/players/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/_snack_game.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/_snack_game.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snack_games/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/_snack.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/_snack.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/snacks/show.json.jbuilder" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +212,7 @@
       <workItem from="1652559517821" duration="12189000" />
       <workItem from="1652716478993" duration="15000" />
       <workItem from="1652716506025" duration="6774000" />
-      <workItem from="1652785307665" duration="1903000" />
+      <workItem from="1652785307665" duration="6283000" />
     </task>
     <servers />
   </component>

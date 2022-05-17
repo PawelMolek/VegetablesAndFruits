@@ -12,15 +12,15 @@ class Game < ApplicationRecord
 
   # assign to every player randomly a snacks included into game
   def assign_snacks_to_players
-    # Very important to select here only active players and include 'active' into player table
 
     @snacks = Snack.all { |snack| snack if snack.active? }
-    @players = Player.all { |player| player if player.active? }
-    length_of_game = (@players.length) * 2
-    length_of_game.times do |game|
-      player = @players.shuffle.first[:id]
+    @players = self.player_ids
+    length_of_game = @players.length
+    length_of_game.times do
+      player = @players.shuffle.first
       snack = @snacks.shuffle.first[:id]
       SnackGame.create!(snack_id: snack, player_id: player, game_id: self.id)
     end
   end
+
 end
