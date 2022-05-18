@@ -2,34 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f0b917-3e54-44f3-a06f-d131332d6ff3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/games/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/games/_game.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/games/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/games/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/games/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/players/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/players/_player.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/players/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/players/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/players/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/players/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/snacks/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/snacks/_snack.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/snacks/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/snacks/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/snacks/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/snacks/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/snacks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/snacks_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/game.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/player.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/player.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/snack.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/snack.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/players_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/players_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/views/players/edit.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/players/edit.html.erb_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/views/players/new.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/players/new.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/games/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/games/_form.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +171,7 @@
       <workItem from="1652716506025" duration="6774000" />
       <workItem from="1652785307665" duration="13032000" />
       <workItem from="1652808992317" duration="2158000" />
-      <workItem from="1652818012016" duration="2137000" />
+      <workItem from="1652818012016" duration="6150000" />
     </task>
     <servers />
   </component>
